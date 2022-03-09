@@ -4,9 +4,32 @@ body, html {
 }
 
 .header-page {
-  height: 40px;
+  height: 7vh;
   background-color: #dc143c;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 3vw;
+  padding-right: 3vw;
+
+  &__icons-left{
+    display: flex;
+  }
+
+  &__icons-right{
+    display: flex;
+  }
+
+  &__icon{
+    cursor:pointer;
+
+    &_middle{
+      margin-left: 1vw;
+      margin-right: 1vw;
+    }
+    &_space{
+      margin-left: 1.5vw;
+      // margin-right: 1vw;
+    }
+  }
 }
