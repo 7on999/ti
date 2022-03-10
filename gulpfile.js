@@ -1,71 +1,184 @@
-const gulp = require('gulp')
-const less = require('gulp-less')
-const bsync = require('browser-sync').create()
+let project_folder = "dist";
+let source_folder = "src";
 
-gulp.task('less', function () {
-return gulp
-  .src('./src/styles/blocks/index.less')
-  .pipe(less())
-  .pipe(gulp.dest('./dist'))
-  .pipe(bsync.stream())
-});
+let path = {
+  build: {
+    html: project_folder + "/",
+    css: project_folder + "/css/",
+    js: project_folder + "/js/",
+    img: project_folder + "/img/",
+    fonts: project_folder + "/fonts/",
+    svg: project_folder + "/svg/",
+  },
+  src: {
+    html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
+    css: source_folder + "/less/index.less",
+    js: source_folder + "/js/main.js",
+    ts: source_folder + "/ts/main.ts",
+    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    fonts: source_folder + "/fonts/*.ttf",
+    svg: source_folder + "/svg/**/svg.svg",
+    fonts: source_folder + "/fonts/*.ttf",
+  },
+  watch: {
+    html: source_folder + "/**/*.html",
+    css: source_folder + "/less/**/*.less",
+    js: source_folder + "/js/**/*.js",
+    ts: source_folder + "/ts/**/*.ts",
+    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    svg: source_folder + "/svg/**/*.svg",
+  },
+  clean: "./" + project_folder + "/",
+}
 
-gulp.task('copy-img', function () {
-return gulp
-  .src('./src/img/*.png')
-  .pipe(gulp.dest('./dist/img'))
-  .pipe(bsync.stream())
-});
+let { src, dest } = require('gulp'),
+  gulp = require('gulp'),
+  browsersync = require('browser-sync').create(),
+  fileinclude = require('gulp-file-include'),
+  del = require('del'),
+  less = require('gulp-less'),
+  typeScript = require("gulp-typescript"),
+  autoprefixer = require('gulp-autoprefixer'),
+  group_media = require('gulp-group-css-media-queries'),
+  clean_css = require('gulp-clean-css'),
+  rename = require('gulp-rename'),
+  uglify = require('gulp-uglify-es').default,
+  imagemin = require('gulp-imagemin'),
+  svgstore = require('gulp-svgstore'),
+  inject = require('gulp-inject'),
+  ttf2woff = require('gulp-ttf2woff'),
+  ttf2woff2 = require('gulp-ttf2woff2');
 
-// gulp.task('copy-img2', function () {
-// return gulp
-// .src('./src/img/links/*.png')
-// .pipe(gulp.dest('./dist/img/links'))
-// .pipe(gulp.dest('./root/img/links'))
-// .pipe(bsync.stream())
-// });
-
-// gulp.task('copy-img3', function () {
-// return gulp
-// .src('./src/img/*.svg')
-// .pipe(gulp.dest('./dist/img'))
-// .pipe(gulp.dest('./root/img'))
-// .pipe(bsync.stream())
-// });
-
-// gulp.task('copy-img4', function () {
-//   return gulp
-//   .src('./src/img/*.jpg')
-//   .pipe(gulp.dest('./dist/img'))
-//   .pipe(gulp.dest('./root/img'))
-//   .pipe(bsync.stream())
-//   });
-
-
-
-gulp.task('copy-html', function () {
-return gulp
-.src('./src/index.html')
-.pipe(gulp.dest('./dist/'))
-.pipe(bsync.stream())
-});
-
-gulp.task('bsync', function () {
-  bsync.init({
-  server:{
-    baseDir: './dist',
-    directory: true
+function browserSync() {
+  browsersync.init({
+    server: {
+      baseDir: "./" + project_folder + "/"
     },
-    startPath:'./index.html'
+    port: 3000,
+    notify: false,
   })
+}
 
-  gulp.watch('./src/styles/**/*.less').on('change', gulp.series('less'));
-  gulp.watch('./src/index.html').on('change', gulp.series('copy-html'));
+function html() {
+  const svgs = src(path.src.svg)
+    .pipe(svgstore({ inlineSvg: true }));
 
-  gulp.watch('./dist/index.css').on('change', bsync.reload);
-  gulp.watch('./dist/index.html').on('change', bsync.reload);
-});
+  function fileContents(filePath, file) {
+    return file.contents.toString();
+  }
 
-gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img'))
+  return src(path.src.html)
+    .pipe(fileinclude())
+    .pipe(inject(svgs, { transform: fileContents }))
+    .pipe(dest(path.build.html))
+    .pipe(browsersync.stream())
+}
 
-gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img'), 'bsync'));
+function css() {
+  return src(path.src.css)
+    .pipe(
+      less({
+        outputStyle: "expanded"
+      })
+    )
+    .pipe(
+      group_media()
+    )
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 5 version"],
+        cascade: true
+      })
+    )
+    .pipe(dest(path.build.css))
+    .pipe(clean_css())
+    .pipe(
+      rename({
+        extname: ".min.css"
+      })
+    )
+    .pipe(dest(path.build.css))
+    .pipe(browsersync.stream())
+}
+
+function ts() {
+  return src(path.src.ts)
+    .pipe(typeScript({
+      noImplicitAny: true,
+      target: "es2020",
+    }))
+    .pipe(fileinclude())
+    .pipe(dest(path.build.js))
+    .pipe(
+      uglify()
+    )
+    .pipe(
+      rename({
+        extname: ".min.js"
+      })
+    )
+    .pipe(dest(path.build.js))
+    .pipe(browsersync.stream())
+}
+
+function images() {
+  return src(path.src.img)
+    .pipe(dest(path.build.img))
+    .pipe(src(path.src.img))
+    .pipe(
+      imagemin({
+        progressive: true,
+        svgoPlugins: [{ removeViewBox: false }],
+        interlaced: true,
+        optimizationLevel: 3
+      })
+    )
+    .pipe(dest(path.build.img))
+    .pipe(browsersync.stream())
+}
+
+//function svg() {
+//    const svgs = src(path.src.svg)
+//        .pipe(svgstore({ inlineSvg: true }));
+
+//    function fileContents (filePath, file) {
+//        return file.contents.toString();
+//    }
+
+//    return src(path.src.html)
+//        .pipe(inject(svgs, { transform: fileContents }))
+
+//}
+
+function fonts() {
+  src(path.src.fonts)
+    .pipe(ttf2woff())
+    .pipe(dest(path.build.fonts));
+  return src(path.src.fonts)
+    .pipe(ttf2woff2())
+    .pipe(dest(path.build.fonts));
+}
+
+function watchFiles() {
+  gulp.watch([path.watch.html], html);
+  gulp.watch([path.watch.css], css);
+  gulp.watch([path.watch.ts], ts);
+  gulp.watch([path.watch.img], images);
+}
+
+function clean() {
+  return del(path.clean);
+}
+
+let build = gulp.series(clean, gulp.parallel(ts, css, html, images, fonts));
+let watch = gulp.parallel(build, watchFiles, browserSync);
+
+
+exports.fonts = fonts;
+exports.images = images;
+exports.ts = ts;
+exports.css = css;
+exports.html = html;
+exports.build = build;
+exports.watch = watch;
+exports.default = watch; 
