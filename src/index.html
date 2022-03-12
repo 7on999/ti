@@ -60,6 +60,87 @@
 		<div class="main-page__main-content"> </div>
 	</main>
 
+	<div class="transparent-background">
+		<div class="pop-up">
+			<header class="pop-up__header">
+				<div class="pop-up__header-logo">
+					<img src="./img/inbox.svg" class="pop-up__header-icon">
+					<div class="pop-up__header-title">Inbox</div>
+				</div>
+				<img src="./img/close.svg" class="pop-up__close-button">
+			</header>
+
+			<div class="editor">
+				<div class="editor__container">
+					<div class="editor__input-container">
+						<input class="editor__title" type="text" placeholder="Title">
+						<textarea class="editor__desc" placeholder="Description"></textarea>
+					</div>
+					<div class="editor__footer">
+						<div class="editor__footer-buttons">
+							<button class="editor__date-button">12.03.2022</button>
+						</div>
+						<div class="editor__footer-icons">
+							<img src="./img/mark.svg" class="editor__mark-icon _first">
+							<img src="./img/priority.svg" class="editor__priority-icon">
+							<img src="./img/project.svg" class="editor__project-icon">
+						</div> 
+					</div>
+				</div>
+				<div class="editor__buttons-container">
+					<button class="editor__save-button">Save</button>
+					<button class="editor__cancel-button">Cancel</button>
+				</div>
+			</div>
+
+			<div class="subtasks">
+				<header class="subtasks__header">
+					<h4 class="subtasks__title">Sub-tasks <span class="subtasks__quantity">1</span></h4>
+				</header>
+				<div class="subtasks__container">
+					<div class="subtasks__task">
+						<label class="subtasks__task-checkbox-container container">
+							<input class="subtasks__task-checkbox" type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="subtasks__task-info">
+							<div class="subtasks__task-title">Title</div>
+							<div class="subtasks__task-desc">Description</div>
+						</div>
+						<img src="./img/edit.svg" class="subtasks__edit-icon">
+					</div>
+					<div class="editor">
+						<div class="editor__container">
+							<div class="editor__input-container">
+								<input class="editor__title" type="text" placeholder="Title">
+								<textarea class="editor__desc" placeholder="Description"></textarea>
+							</div>
+							<div class="editor__footer">
+								<div class="editor__footer-buttons">
+									<button class="editor__date-button">12.03.2022</button>
+								</div>
+								<div class="editor__footer-icons">
+									<img src="./img/mark.svg" class="editor__mark-icon _first">
+									<img src="./img/priority.svg" class="editor__priority-icon">
+									<img src="./img/project.svg" class="editor__project-icon">
+								</div> 
+							</div>
+						</div>
+						<div class="editor__buttons-container">
+							<button class="editor__save-button">Save</button>
+							<button class="editor__cancel-button">Cancel</button>
+						</div>
+					</div>
+				</div>
+				<div class="subtasks__add-block">
+					<img src="./img/add.svg" class="subtasks__add-icon">
+					<span class="subtasks__add-title">Add sub-task</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	<script src="js/main.js">
 	</script>
 </body>
