@@ -1,6 +1,17 @@
-.open-mark {
+.open-text-btn {
     border-radius: 3px;
     transition: .1s;
+    cursor: pointer;
+    margin-right: 5px;
+
+    &__icon {
+        transform: translate(1.5px, 1px) rotate(-90deg);
+    }
+
+    &__icon-rotate {
+        transform: translateY(0) rotate(0);
+    }
+
     &:hover {
         background: rgb(228, 228, 228);
     }

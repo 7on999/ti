@@ -17,7 +17,7 @@ let path = {
     ts: source_folder + "/ts/main.ts",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
-    svg: source_folder + "/svg/**/svg.svg",
+    svg: source_folder + "/svg/svgs.svg",
     fonts: source_folder + "/fonts/*.ttf",
   },
   watch: {
@@ -138,16 +138,15 @@ function images() {
 }
 
 //function svg() {
-//    const svgs = src(path.src.svg)
-//        .pipe(svgstore({ inlineSvg: true }));
+//  const svgs = src(path.src.svg)
+//    .pipe(svgstore({ inlineSvg: true }));
 
-//    function fileContents (filePath, file) {
-//        return file.contents.toString();
-//    }
+//  function fileContents (filePath, file) {
+//    return file.contents.toString();
+//  }
 
-//    return src(path.src.html)
-//        .pipe(inject(svgs, { transform: fileContents }))
-
+//  return src(path.src + 'inline-svg.html')
+//    .pipe(inject(svgs, { transform: fileContents }))
 //}
 
 function fonts() {
