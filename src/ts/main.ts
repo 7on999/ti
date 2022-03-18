@@ -1,3 +1,4 @@
+
   const arrow = document.querySelector('.arrow')
   const mainBlock = document.querySelector('.projects__title')
   const inputBlock:HTMLElement = document.querySelector('.input')
@@ -87,3 +88,5 @@ let i =0
 //   }
 
 //   hideElem(mainBlock, arrow, '.projects__plus', '.projects__item'  )
+
+

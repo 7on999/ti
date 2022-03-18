@@ -1,0 +1,101 @@
+.subtasks {
+    padding: 4px 4px 0;
+
+    &__title {
+        line-height: 1rem;
+        font-size: 13px;
+        font-weight: 700;
+        color: #202020;
+        border-bottom: 1px solid #202020;
+        padding: 9px 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__quantity {
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    &__container {
+        padding: 20px 30px 0;
+    }
+
+    &__task {
+        display: flex;
+        align-items: stretch;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__task-checkbox {
+        margin: 16px 10px 0 -3px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    &__task-info {
+        flex: 1;
+        padding: 8px 0;
+        margin-right: 30px;
+        margin-bottom: 3px;
+    }
+
+    &__task-title {
+        font-size: 14px;
+        line-height: 21px;
+        overflow: hidden;
+    }
+
+    &__task-desc {
+        font-size: 12px;
+        overflow: hidden;
+        color: gray;
+        overflow: hidden;
+    }
+
+    &__add-block {
+        padding: 0 33px 8px;
+        color: #555;
+        margin-left: -2px;
+        font-size: 14px;
+        white-space: nowrap;
+        color: grey;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: #dd4b39;
+        }
+    }
+
+    &__add-icon {
+        border-radius: 50%;
+        height: 13px;
+        margin-right: 11px;
+        width: 13px;
+    }
+
+    &__edit-icon {
+        margin-right: -24px;
+        height: 24px;
+        width: 24px;
+        margin-top: 8px;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 3px;
+        color: grey;
+        cursor: pointer;
+        margin-left: 8px;
+
+        &:hover {
+            background: #eee;
+        }
+    }
+}
