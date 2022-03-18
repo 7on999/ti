@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TI</title>
-  <link href='css/index.css' rel='stylesheet'/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TI</title>
+	<link href='css/index.css' rel='stylesheet' />
 </head>
+
 <body>
-  <header class="header-page"> 
-    <div class="header-page__icons-left">
-      <img class='header-page__icon' src='./img/hut.png' alt='home'/>
-      <img class='header-page__icon header-page__icon_middle' src='./img/hamburger.png' alt='menu-hamburger'/>
-      <input type='text' class='header__input' placeholder="Поиск"/>  
-    </div>   
-    <div class="header-page__icons-rigth">
+	<header class="header-page">
+		<!--<div class="header-page__icons-left">
+			<img class='header-page__icon' src='./img/hut.png' alt='home' />
+			<img class='header-page__icon header-page__icon_middle' src='./img/hamburger.png' alt='menu-hamburger' />
+			<input type='text' class='header__input' placeholder="Поиск" />
+		</div>
+		<div class="header-page__icons-rigth">
 
-      <img class='header-page__icon header-page__icon_space' src='./img/plus.png' alt='add task'/>
-      <img class='header-page__icon header-page__icon_space' src='./img/goal.png'/>
-      <span>0</span>
-      <span>/</span>
-      <span>5</span>
-      
-      <img class='header-page__icon header-page__icon_space' src='./img/question.png' alt='question'/>
-      <img class='header-page__icon header-page__icon_space' src='./img/bell.png' alt='bell'/>
-      <img class='header-page__icon header-page__icon_space' src='./img/user.png' alt='avatar'/>
-    </div>
-  </header>
- <main class="main-page">
-    <div class="main-page__categories"> 
+			<img class='header-page__icon header-page__icon_space' src='./img/plus.png' alt='add task' />
+			<img class='header-page__icon header-page__icon_space' src='./img/goal.png' />
+			<span>0</span>
+			<span>/</span>
+			<span>5</span>
 
-      <div class="main-page__item main-page__item_incoming"> 
-        <div class="main-page__item-left">  
-          <img class='main-page__item-img'src='./img/incoming.png'/> 
-          Incoming 
-        </div>
-         
-         <div> 5 </div>   
-         <!-- сверху кол-во входящих -->
-       
-      </div>
-      <div class="main-page__item main-page__item_today"> 
-        <div class="main-page__item-left">  
-          <img class='main-page__item-img'src='./img/calendar.png'  alt='Upcoming_img'/> 
-          Today 
-        </div>
-      </div>
+			<img class='header-page__icon header-page__icon_space' src='./img/question.png' alt='question' />
+			<img class='header-page__icon header-page__icon_space' src='./img/bell.png' alt='bell' />
+			<img class='header-page__icon header-page__icon_space' src='./img/user.png' alt='avatar' />
+		</div>-->
+	</header>
+	<main class="main-page">
+		<div class="main-page__categories">
 
-      <div class="main-page__item main-page__item_today"> 
-        <div class="main-page__item-left">  
-          <img class='main-page__item-img'src='./img/upcoming.png'  alt='Upcoming_img'/> 
-          Upcoming 
-        </div>
-      </div>
-  
+			<div class="main-page__item main-page__item_incoming">
+				<div class="main-page__item-left">
+					<img class='main-page__item-img' src='./img/incoming.png' />
+					Incoming
+				</div>
 
-      <div class="main-page__item main-page__item_filters-and-labels">
-        <div class="main-page__item-left">  
-          <img class='main-page__item-img'src='./img/filter.png'/> 
-          Filters and labels
-        </div>
-      </div>
-        
-     
- 
+				<div> 5 </div>
+				<!-- сверху кол-во входящих -->
 
-      <div class="projects">
-        <div class="projects__title"> 
-          <div class="projects__title-left"> 
-            <svg class='arrow' width="16px" height="16px" viewBox="0 0 16 16"><g transform="translate(-266, -17)" fill="#777777"><path d="M280,22.7581818 L279.1564,22 L273.9922,26.506 L273.4414,26.0254545 L273.4444,26.0281818 L268.8562,22.0245455 L268,22.7712727 C269.2678,23.878 272.8084,26.9674545 273.9922,28 C274.8718,27.2330909 274.0144,27.9809091 280,22.7581818"></path></g></svg>
-            <span class="projects__title-label"> Projects </span>
-          </div>
-          <div class="projects__title-rigth"> 
-           <svg class="projects__plus" width="13" height="13"><path d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z" fill="currentColor" fill-rule="evenodd"></path></svg>
-          </div>
-        </div>
+			</div>
+			<div class="main-page__item main-page__item_today">
+				<div class="main-page__item-left">
+					<img class='main-page__item-img' src='./img/calendar.png' alt='Upcoming_img' />
+					Today
+				</div>
+			</div>
 
-        <div class='input'>
-           <input class="input__tag" placeholder="Write name of your project"> </input>
-        </div>
+			<div class="main-page__item main-page__item_today">
+				<div class="main-page__item-left">
+					<img class='main-page__item-img' src='./img/upcoming.png' alt='Upcoming_img' />
+					Upcoming
+				</div>
+			</div>
 
-        <div class="projects__item"> 
-          <svg width="24" height="24" viewBox="0 0 24 24" class="project_icon" style="color: rgb(184, 184, 184);"><path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path></svg>
-          Welcome everyone!
-        </div>
+
+			<div class="main-page__item main-page__item_filters-and-labels">
+				<div class="main-page__item-left">
+					<img class='main-page__item-img' src='./img/filter.png' />
+					Filters and labels
+				</div>
+			</div>
+
+
+
+
+			<div class="projects">
+				<div class="projects__title">
+					<div class="projects__title-left">
+						<svg class='arrow' width="16px" height="16px" viewBox="0 0 16 16">
+							<g transform="translate(-266, -17)" fill="#777777">
+								<path
+									d="M280,22.7581818 L279.1564,22 L273.9922,26.506 L273.4414,26.0254545 L273.4444,26.0281818 L268.8562,22.0245455 L268,22.7712727 C269.2678,23.878 272.8084,26.9674545 273.9922,28 C274.8718,27.2330909 274.0144,27.9809091 280,22.7581818">
+								</path>
+							</g>
+						</svg>
+						<span class="projects__title-label"> Projects </span>
+					</div>
+					<div class="projects__title-rigth">
+						<svg class="projects__plus" width="13" height="13">
+							<path
+								d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+								fill="currentColor" fill-rule="evenodd"></path>
+						</svg>
+					</div>
+				</div>
+
+				<div class='input'>
+					<input class="input__tag" placeholder="Write name of your project"> </input>
+				</div>
+
+				<div class="projects__item">
+					<svg width="24" height="24" viewBox="0 0 24 24" class="project_icon"
+						style="color: rgb(184, 184, 184);">
+						<path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
+					</svg>
+					Welcome everyone!
+				</div>
+				<div class="projects__item">
+					<svg width="24" height="24" viewBox="0 0 24 24" class="project_icon"
+						style="color: rgb(184, 184, 184);">
+						<path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
+					</svg>
+					Study play guitar
+				</div>
+			</div>
 		</div>
 		<div class="main-page__main-content">
 
@@ -323,7 +346,7 @@
 				</div>
 			</section>
 
-			<section class="section _display-n" id="flag-label">
+			<section class="section" id="flag-label">
 				<h2>
 					<p class="section__title">
 						Flags and labels
@@ -534,7 +557,7 @@
 		</div>
 	</main>
 
-	<div class="transparent-background">
+	<div class="transparent-background _display-n">
 		<div class="pop-up">
 			<header class="pop-up__header">
 				<div class="pop-up__header-logo">
@@ -564,10 +587,10 @@
 							<img src="./img/mark.svg" class="editor__mark-icon _first">
 							<img src="./img/priority.svg" class="editor__priority-icon">
 							<img src="./img/project.svg" class="editor__project-icon">
-						</div> 
+						</div>
 					</div>
 					<div class="editor__menus-container">
-						
+
 						<div class="prioritets-list none">
 							<div class="prioritets-list__item">
 								<img src="./img/priority1.svg" class="prioritets-list__item-icon">
@@ -659,7 +682,7 @@
 									<img src="./img/mark.svg" class="editor__mark-icon _first">
 									<img src="./img/priority.svg" class="editor__priority-icon">
 									<img src="./img/project.svg" class="editor__project-icon">
-								</div> 
+								</div>
 							</div>
 						</div>
 						<div class="editor__buttons-container">
@@ -675,23 +698,14 @@
 			</div>
 
 		</div>
+	</div>
+
+	<script src="./js/main.js">  </script>
 	<div class="sr-only">
 		<!-- inject:svg -->
 
 		<!-- endinject -->
 	</div>
-
-	<script src="js/main.js">
-	</script>
 </body>
 
-        <div class="projects__item"> 
-          <svg width="24" height="24" viewBox="0 0 24 24" class="project_icon" style="color: rgb(184, 184, 184);"><path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path></svg>
-         Study play guitar
-        </div>
-      </div>
-    <div class="main-page__main-content"> </div>
- </main>
- <script src="./js/main.js">  </script>
-</body>
 </html>
