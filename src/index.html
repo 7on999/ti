@@ -506,6 +506,147 @@
 		</div>
 	</main>
 
+	<div class="transparent-background">
+		<div class="pop-up">
+			<header class="pop-up__header">
+				<div class="pop-up__header-logo">
+					<img src="./img/inbox.svg" class="pop-up__header-icon">
+					<div class="pop-up__header-title">Inbox</div>
+				</div>
+				<img src="./img/close.svg" class="pop-up__close-button">
+			</header>
+
+			<div class="editor">
+				<div class="editor__container">
+					<div class="editor__input-container">
+						<div class="editor__marks-container">
+							<span class="editor__mark">
+								<img src="./img/mark.svg" class="editor__mark-small-icon">
+								<span class="editor__mark-title">Mark</span>
+							</span>
+						</div>
+						<input class="editor__title" type="text" placeholder="Title">
+						<textarea class="editor__desc _main" placeholder="Description"></textarea>
+					</div>
+					<div class="editor__footer">
+						<div class="editor__footer-buttons">
+							<button class="editor__date-button">12.03.2022</button>
+						</div>
+						<div class="editor__footer-icons">
+							<img src="./img/mark.svg" class="editor__mark-icon _first">
+							<img src="./img/priority.svg" class="editor__priority-icon">
+							<img src="./img/project.svg" class="editor__project-icon">
+						</div> 
+					</div>
+					<div class="editor__menus-container">
+						
+						<div class="prioritets-list none">
+							<div class="prioritets-list__item">
+								<img src="./img/priority1.svg" class="prioritets-list__item-icon">
+								<h5 class="prioritets-list__item-title">Priority 1</h5>
+							</div>
+							<div class="prioritets-list__item">
+								<img src="./img/priority2.svg" class="prioritets-list__item-icon">
+								<h5 class="prioritets-list__item-title">Priority 2</h5>
+							</div>
+							<div class="prioritets-list__item">
+								<img src="./img/priority3.svg" class="prioritets-list__item-icon">
+								<h5 class="prioritets-list__item-title">Priority 3</h5>
+							</div>
+						</div>
+
+						<div class="projects-list none">
+							<div class="projects-list__item">
+								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<h5 class="projects-list__item-title">Project 1</h5>
+							</div>
+							<div class="projects-list__item">
+								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<h5 class="projects-list__item-title">Project 2</h5>
+							</div>
+							<div class="projects-list__item">
+								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<h5 class="projects-list__item-title">Project 3</h5>
+							</div>
+						</div>
+
+						<div class="marks-list none">
+							<div class="marks-list__input-container">
+								<input type="text" class="marks-list__input" placeholder="Type a label">
+							</div>
+							<ul class="marks-list__items">
+								<li class="marks-list__item">
+									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<span class="marks-list__item-title">Mark 1</span>
+									<img src="./img/mark-checkbox.svg" class="marks-list__item-checkbox">
+								</li>
+								<li class="marks-list__item">
+									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<span class="marks-list__item-title">Mark 2</span>
+									<img src="./img/mark-checkbox-none.svg" class="marks-list__item-checkbox">
+								</li>
+								<li class="marks-list__item">
+									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<span class="marks-list__item-title">Mark 3</span>
+									<img src="./img/mark-checkbox.svg" class="marks-list__item-checkbox">
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="editor__buttons-container">
+					<button class="editor__save-button">Save</button>
+					<button class="editor__cancel-button">Cancel</button>
+				</div>
+			</div>
+
+			<div class="subtasks">
+				<header class="subtasks__header">
+					<h4 class="subtasks__title">Sub-tasks <span class="subtasks__quantity">1</span></h4>
+				</header>
+				<div class="subtasks__container">
+					<div class="subtasks__task">
+						<label class="subtasks__task-checkbox-container container">
+							<input class="subtasks__task-checkbox" type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="subtasks__task-info">
+							<div class="subtasks__task-title">Title</div>
+							<div class="subtasks__task-desc">Description</div>
+						</div>
+						<img src="./img/edit.svg" class="subtasks__edit-icon">
+					</div>
+					<div class="editor">
+						<div class="editor__container">
+							<div class="editor__input-container">
+								<input class="editor__title" type="text" placeholder="Title">
+								<textarea class="editor__desc" placeholder="Description"></textarea>
+							</div>
+							<div class="editor__footer">
+								<div class="editor__footer-buttons">
+									<button class="editor__date-button">12.03.2022</button>
+								</div>
+								<div class="editor__footer-icons">
+									<img src="./img/mark.svg" class="editor__mark-icon _first">
+									<img src="./img/priority.svg" class="editor__priority-icon">
+									<img src="./img/project.svg" class="editor__project-icon">
+								</div> 
+							</div>
+						</div>
+						<div class="editor__buttons-container">
+							<button class="editor__save-button">Save</button>
+							<button class="editor__cancel-button">Cancel</button>
+						</div>
+					</div>
+				</div>
+				<div class="subtasks__add-block">
+					<img src="./img/add.svg" class="subtasks__add-icon">
+					<span class="subtasks__add-title">Add sub-task</span>
+				</div>
+			</div>
+
+		</div>
 	<div class="sr-only">
 		<!-- inject:svg -->
 
