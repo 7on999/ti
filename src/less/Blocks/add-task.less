@@ -1,0 +1,37 @@
+.add-task {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    &__text {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #9c9c9c;
+        font-size: 16px;
+    }
+
+    &__image-wrap {
+        padding: 1.5px 2px 0;
+        border-radius: 20px;
+        margin-top: -1px;
+    }
+
+    &__icon {
+        fill: #2c9fe2;
+    }
+
+    &:hover &__image-wrap {
+        background: #2c9fe2;
+    }
+
+    &:hover &__icon {
+        fill: #fff;
+    }
+
+    &:hover &__text {
+        color: #2c9fe2;
+    }
+}
