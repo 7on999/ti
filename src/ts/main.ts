@@ -1,3 +1,27 @@
+import "../styles/index.less";
+
+import "../assets/icons/add.svg";
+import "../assets/icons/close.svg";
+import "../assets/icons/edit.svg";
+import "../assets/icons/inbox.svg";
+import "../assets/icons/mark-checkbox-none.svg";
+import "../assets/icons/mark-checkbox.svg";
+import "../assets/icons/mark.svg";
+import "../assets/icons/priority.svg";
+import "../assets/icons/priority1.svg";
+import "../assets/icons/priority2.svg";
+import "../assets/icons/priority3.svg";
+import "../assets/icons/project-circle.svg";
+import "../assets/icons/project.svg";
+import "../assets/icons/check-box.svg";
+import "../assets/icons/date-min.svg";
+import "../assets/icons/flag-1.svg";
+import "../assets/icons/flag-2.svg";
+import "../assets/icons/flag-3.svg";
+import "../assets/icons/label-big.svg";
+import "../assets/icons/label-min.svg";
+import "../assets/icons/open-teg-mark.svg";
+import "../assets/icons/plus-project.svg";
 
   const arrow = document.querySelector('.arrow')
   const mainBlock = document.querySelector('.projects__title')
