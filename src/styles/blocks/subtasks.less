@@ -29,8 +29,28 @@
         position: relative;
     }
 
+    &__task-checkbox-container {
+        border: 1px solid #838383;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 9px;
+        margin-right: 15px;
+        transition: .2s;
+        width: 19px;
+        height: 19px;
+
+        &:hover {
+            background: #d3d2d2;
+        }
+
+        &:hover .subtasks__tasks-checkbox {
+            fill: #6b6b6b;
+        }
+    }
+
     &__task-checkbox {
-        margin: 16px 10px 0 -3px;
+        margin: -4px -4px -5px -3px;
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -71,13 +91,20 @@
         &:hover {
             color: #dd4b39;
         }
+
+        &:hover .subtasks__add-icon {
+            background: #dd4b39;
+            fill: #fff;
+        }
     }
 
     &__add-icon {
+        padding: 2px;
         border-radius: 50%;
-        height: 13px;
+        height: 11px;
         margin-right: 11px;
-        width: 13px;
+        width: 11px;
+        fill: #dd4b39;
     }
 
     &__edit-icon {
@@ -96,6 +123,7 @@
 
         &:hover {
             background: #eee;
+            color: #202020;
         }
     }
 }

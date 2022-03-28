@@ -42,10 +42,6 @@ module.exports = {
 				test: /\.css$/,
 				use: [MiniCssExtractPlugin.loader, 'css-loader']
 			},
-			/*{
-				test: /\.(jpe?g|png|gif)$/i,
-			 	use: ["file-loader?name=img/[name].[ext]"]
-			},*/
             {
                 test: /\.svg$/,
                 use: [
@@ -65,7 +61,7 @@ module.exports = {
 				test: /\.ts?$/,
 				exclude: /node_modules/,
 				use: ['ts-loader']
-			},
+			}
 		]
 	}
 }
