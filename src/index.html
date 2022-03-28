@@ -555,14 +555,18 @@
 		</div>
 	</main>
 
-	<div class="transparent-background _display-n">
+	<div class="transparent-background">
 		<div class="pop-up">
 			<header class="pop-up__header">
 				<div class="pop-up__header-logo">
-					<img src="./img/inbox.svg" class="pop-up__header-icon">
+					<svg class="pop-up__header-icon">
+						<use xlink:href="#inbox"></use>
+					</svg>
 					<div class="pop-up__header-title">Inbox</div>
 				</div>
-				<img src="./img/close.svg" class="pop-up__close-button">
+				<svg class="pop-up__close-button">
+					<use xlink:href="#close"></use>
+				</svg>
 			</header>
 
 			<div class="editor">
@@ -570,7 +574,9 @@
 					<div class="editor__input-container">
 						<div class="editor__marks-container">
 							<span class="editor__mark">
-								<img src="./img/mark.svg" class="editor__mark-small-icon">
+								<svg class="editor__mark-small-icon">
+									<use xlink:href="#mark"></use>
+								</svg>
 								<span class="editor__mark-title">Mark</span>
 							</span>
 						</div>
@@ -582,39 +588,57 @@
 							<button class="editor__date-button">12.03.2022</button>
 						</div>
 						<div class="editor__footer-icons">
-							<img src="./img/mark.svg" class="editor__mark-icon _first">
-							<img src="./img/priority.svg" class="editor__priority-icon">
-							<img src="./img/project.svg" class="editor__project-icon">
+							<svg class="editor__mark-icon _first">
+								<use xlink:href="#mark"></use>
+							</svg>
+							<svg class="editor__priority-icon">
+								<use xlink:href="#priority"></use>
+							</svg>
+							<svg class="editor__project-icon">
+								<use xlink:href="#project"></use>
+							</svg>
 						</div>
 					</div>
 					<div class="editor__menus-container">
 
 						<div class="prioritets-list none">
 							<div class="prioritets-list__item">
-								<img src="./img/priority1.svg" class="prioritets-list__item-icon">
+								<svg class="prioritets-list__item-icon">
+									<use xlink:href="#priority1"></use>
+								</svg>
 								<h5 class="prioritets-list__item-title">Priority 1</h5>
 							</div>
 							<div class="prioritets-list__item">
-								<img src="./img/priority2.svg" class="prioritets-list__item-icon">
+								<svg class="prioritets-list__item-icon">
+									<use xlink:href="#priority2"></use>
+								</svg>
 								<h5 class="prioritets-list__item-title">Priority 2</h5>
 							</div>
 							<div class="prioritets-list__item">
-								<img src="./img/priority3.svg" class="prioritets-list__item-icon">
+								<svg class="prioritets-list__item-icon">
+									<use xlink:href="#priority3"></use>
+								</svg>
 								<h5 class="prioritets-list__item-title">Priority 3</h5>
 							</div>
 						</div>
 
 						<div class="projects-list none">
 							<div class="projects-list__item">
-								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<svg class="projects-list__item-icon">
+									<use xlink:href="#project-circle"></use>
+								</svg>
 								<h5 class="projects-list__item-title">Project 1</h5>
 							</div>
 							<div class="projects-list__item">
-								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<svg class="projects-list__item-icon">
+									<use xlink:href="#project-circle"></use>
+								</svg>
 								<h5 class="projects-list__item-title">Project 2</h5>
 							</div>
 							<div class="projects-list__item">
-								<img src="./img/project-circle.svg" class="projects-list__item-icon">
+								<svg class="projects-list__item-icon">
+									<use xlink:href="#project-circle"></use>
+								</svg>
 								<h5 class="projects-list__item-title">Project 3</h5>
 							</div>
 						</div>
@@ -625,19 +649,31 @@
 							</div>
 							<ul class="marks-list__items">
 								<li class="marks-list__item">
-									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<svg class="marks-list__item-icon">
+										<use xlink:href="#mark"></use>
+									</svg>
 									<span class="marks-list__item-title">Mark 1</span>
-									<img src="./img/mark-checkbox.svg" class="marks-list__item-checkbox">
+									<svg class="marks-list__item-checkbox">
+										<use xlink:href="#mark-checkbox"></use>
+									</svg>
 								</li>
 								<li class="marks-list__item">
-									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<svg class="marks-list__item-icon">
+										<use xlink:href="#mark"></use>
+									</svg>
 									<span class="marks-list__item-title">Mark 2</span>
-									<img src="./img/mark-checkbox-none.svg" class="marks-list__item-checkbox">
+									<svg class="marks-list__item-checkbox">
+										<use xlink:href="#mark-checkbox-none"></use>
+									</svg>
 								</li>
 								<li class="marks-list__item">
-									<img src="./img/mark.svg" class="marks-list__item-icon">
+									<svg class="marks-list__item-icon">
+										<use xlink:href="#mark"></use>
+									</svg>
 									<span class="marks-list__item-title">Mark 3</span>
-									<img src="./img/mark-checkbox.svg" class="marks-list__item-checkbox">
+									<svg class="marks-list__item-checkbox">
+										<use xlink:href="#mark-checkbox"></use>
+									</svg>
 								</li>
 							</ul>
 						</div>
@@ -656,15 +692,18 @@
 				</header>
 				<div class="subtasks__container">
 					<div class="subtasks__task">
-						<label class="subtasks__task-checkbox-container container">
-							<input class="subtasks__task-checkbox" type="checkbox">
-							<span class="checkmark"></span>
-						</label>
+						<div class="subtasks__task-checkbox-container">
+							<svg class="subtasks__task-checkbox">
+								<use xlink:href="#check-box"></use>
+							</svg>
+						</div>
 						<div class="subtasks__task-info">
 							<div class="subtasks__task-title">Title</div>
 							<div class="subtasks__task-desc">Description</div>
 						</div>
-						<img src="./img/edit.svg" class="subtasks__edit-icon">
+						<svg class="subtasks__edit-icon">
+							<use xlink:href="#edit"></use>
+						</svg>
 					</div>
 					<div class="editor">
 						<div class="editor__container">
@@ -677,9 +716,15 @@
 									<button class="editor__date-button">12.03.2022</button>
 								</div>
 								<div class="editor__footer-icons">
-									<img src="./img/mark.svg" class="editor__mark-icon _first">
-									<img src="./img/priority.svg" class="editor__priority-icon">
-									<img src="./img/project.svg" class="editor__project-icon">
+									<svg class="editor__mark-icon _first">
+										<use xlink:href="#mark"></use>
+									</svg>
+									<svg class="editor__priority-icon">
+										<use xlink:href="#priority"></use>
+									</svg>
+									<svg class="editor__project-icon">
+										<use xlink:href="#project"></use>
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -690,20 +735,16 @@
 					</div>
 				</div>
 				<div class="subtasks__add-block">
-					<img src="./img/add.svg" class="subtasks__add-icon">
+					<svg class="subtasks__add-icon">
+						<use xlink:href="#add"></use>
+					</svg>
 					<span class="subtasks__add-title">Add sub-task</span>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
 	<script src="./js/main.js">  </script>
-	<div class="sr-only">
-		<!-- inject:svg -->
-
-		<!-- endinject -->
-	</div>
 </body>
 
 </html>
