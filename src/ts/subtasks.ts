@@ -1,3 +1,1 @@
-export class Subtasks {
-    
-}
+export class Subtasks {}
