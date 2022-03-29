@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TI</title>
+        <script src="./chunk.js"></script>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TI</title>
-	<script src="./chunk.js"></script>
-</head>
-
-<body>
-	<header class="header-page">
-		<!--<div class="header-page__icons-left">
+    <body>
+        <header class="header-page">
+            <!--<div class="header-page__icons-left">
 			<img class='header-page__icon' src='./img/hut.png' alt='home' />
 			<img class='header-page__icon header-page__icon_middle' src='./img/hamburger.png' alt='menu-hamburger' />
 			<input type='text' class='header__input' placeholder="Поиск" />
@@ -28,723 +27,757 @@
 			<img class='header-page__icon header-page__icon_space' src='./img/bell.png' alt='bell' />
 			<img class='header-page__icon header-page__icon_space' src='./img/user.png' alt='avatar' />
 		</div>-->
-	</header>
-	<main class="main-page">
-		<div class="main-page__categories">
-
-			<div class="main-page__item main-page__item_incoming">
-				<div class="main-page__item-left">
-					<img class='main-page__item-img' src='./img/incoming.png' />
-					Incoming
-				</div>
-
-				<div> 5 </div>
-				<!-- сверху кол-во входящих -->
-
-			</div>
-			<div class="main-page__item main-page__item_today">
-				<div class="main-page__item-left">
-					<img class='main-page__item-img' src='./img/calendar.png' alt='Upcoming_img' />
-					Today
-				</div>
-			</div>
-
-			<div class="main-page__item main-page__item_today">
-				<div class="main-page__item-left">
-					<img class='main-page__item-img' src='./img/upcoming.png' alt='Upcoming_img' />
-					Upcoming
-				</div>
-			</div>
-
-			<div class="main-page__item main-page__item_filters-and-labels">
-				<div class="main-page__item-left">
-					<img class='main-page__item-img' src='./img/filter.png' />
-					Filters and labels
-				</div>
-			</div>
-
-
-
-
-			<div class="projects">
-				<div class="projects__title">
-					<div class="projects__title-left">
-						<svg class='arrow' width="16px" height="16px" viewBox="0 0 16 16">
-							<g transform="translate(-266, -17)" fill="#777777">
-								<path
-									d="M280,22.7581818 L279.1564,22 L273.9922,26.506 L273.4414,26.0254545 L273.4444,26.0281818 L268.8562,22.0245455 L268,22.7712727 C269.2678,23.878 272.8084,26.9674545 273.9922,28 C274.8718,27.2330909 274.0144,27.9809091 280,22.7581818">
-								</path>
-							</g>
-						</svg>
-						<span class="projects__title-label"> Projects </span>
-					</div>
-					<div class="projects__title-rigth">
-						<svg class="projects__plus" width="13" height="13">
-							<path
-								d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
-								fill="currentColor" fill-rule="evenodd"></path>
-						</svg>
-					</div>
-				</div>
-				<div class='input'>
-					<input class="input__tag" placeholder="Write name of your project"> </input>
-				</div>
-
-				<div class="projects__item">
-					<svg width="24" height="24" viewBox="0 0 24 24" class="project_icon"
-						style="color: rgb(184, 184, 184);">
-						<path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
-					</svg>
-					Welcome everyone!
-				</div>
-				<div class="projects__item">
-					<svg width="24" height="24" viewBox="0 0 24 24" class="project_icon"
-						style="color: rgb(184, 184, 184);">
-						<path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
-					</svg>
-					Study play guitar
-				</div>
-			</div>
-		</div>
-		<div class="main-page__main-content">
-
-			<section class="section" id="main">
-
-				<h2>
-					<p class="section__title">
-						Входящие
-					</p>
-				</h2>
-
-				<div class="section__content">
-					<a class="add-task" id="add-task-btn">
-						<div class="add-task__image-wrap">
-							<svg width="13" height="13">
-								<path class="add-task__icon"
-									d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
-									fill-rule="evenodd">
-								</path>
-							</svg>
-						</div>
-
-						<p class="add-task__text">
-							Добавить задачу
-						</p>
-					</a>
-
-					<div class="task-min">
-						<div class="task-min__content">
-							<div class="task-min__check-box">
-								<div class="check-box">
-									<svg width="24" height="24" class="check-box__mark">
-										<path
-											d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z">
-										</path>
-									</svg>
-								</div>
-							</div>
-
-							<div class="task-min__main-content">
-								<p class="task-min__name">
-									name
-								</p>
-
-								<p class="task-min__description">
-									description
-								</p>
-
-								<div class="task-min__tags">
-									<p class="date">
-										<svg width="12" height="12" viewBox="0 0 12 12">
-											<path fill="currentColor" fill-rule="nonzero"
-												d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z">
-											</path>
-										</svg>
-										date
-									</p>
-
-									<div class="task-min__labels">
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line">
-					</div>
-				</div>
-			</section>
-
-			<section class="section _display-n" id="today">
-				<h2>
-					<p class="section__title">
-						Сегодня
-					</p>
-				</h2>
-
-				<div class="section__content">
-					<a class="add-task" id="add-task-btn">
-						<div class="add-task__image-wrap">
-							<svg width="13" height="13">
-								<path class="add-task__icon"
-									d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
-									fill-rule="evenodd">
-								</path>
-							</svg>
-						</div>
-
-						<p class="add-task__text">
-							Добавить задачу
-						</p>
-					</a>
-
-					<div class="task-min">
-						<div class="task-min__content">
-							<div class="task-min__check-box">
-								<div class="check-box">
-									<svg width="24" height="24" class="check-box__mark">
-										<path
-											d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z">
-										</path>
-									</svg>
-								</div>
-							</div>
-
-							<div class="task-min__main-content">
-								<p class="task-min__name">
-									name
-								</p>
-
-								<p class="task-min__description">
-									description
-								</p>
-
-								<div class="task-min__tags">
-									<p class="date">
-										<svg width="12" height="12" viewBox="0 0 12 12">
-											<path fill="currentColor" fill-rule="nonzero"
-												d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z">
-											</path>
-										</svg>
-										date
-									</p>
-
-									<div class="task-min__labels">
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line">
-					</div>
-				</div>
-			</section>
-
-			<section class="section _display-n" id="completed">
-				<h2>
-					<p class="section__title">
-						completed
-					</p>
-				</h2>
-
-				<div class="section__content">
-
-					<div class="task-min">
-						<div class="task-min__content _completed">
-							<div class="task-min__check-box">
-								<div class="check-box _completed-check-box">
-									<svg width="24" height="24" class="check-box__mark _completed-check-box-mark">
-										<path
-											d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z">
-										</path>
-									</svg>
-								</div>
-							</div>
-
-							<div class="task-min__main-content">
-								<p class="task-min__name _completed-text">
-									name
-								</p>
-
-								<p class=" task-min__description _completed-text">
-									description
-								</p>
-
-								<div class="task-min__tags">
-									<p class="date">
-										<svg width="12" height="12" viewBox="0 0 12 12">
-											<path fill="currentColor" fill-rule="nonzero"
-												d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z">
-											</path>
-										</svg>
-										date
-									</p>
-
-									<div class="task-min__labels">
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line">
-					</div>
-				</div>
-			</section>
-
-			<section class="section" id="flag-label">
-				<h2>
-					<p class="section__title">
-						Flags and labels
-					</p>
-				</h2>
-
-				<div class="section__content">
-
-					<div class="flag-label" id="flags">
-						<div class="flag-label__open-btn">
-							<div class="open-text-btn">
-								<svg width="24" height="24" class="open-text-btn__icon">
-									<path fill="none" stroke="currentColor" d="M16 10l-4 4-4-4">
-									</path>
-								</svg>
-							</div>
-						</div>
-
-						<div class="flag-label__content">
-							<h3>
-								<p class="flag-label__title">
-									Flags
-								</p>
-							</h3>
-
-							<div class="flag-label__wrapper" open>
-								<a class="flag-label__item">
-									<svg data-svgs-path="sm1/priority_1.svg" xmlns="http://www.w3.org/2000/svg"
-										width="24" height="24" viewBox="0 0 24 24">
-										<path fill="#d1453b" fill-rule="nonzero"
-											d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z">
-										</path>
-									</svg>
-
-									<span class="flag-label__text">
-										Приоритет 1
-									</span>
-
-									<hr class="hr-line">
-								</a>
-
-								<a class="flag-label__item">
-									<svg data-svgs-path="sm1/priority_2.svg" xmlns="http://www.w3.org/2000/svg"
-										width="24" height="24" viewBox="0 0 24 24">
-										<path fill="#EB8909" fill-rule="nonzero"
-											d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z">
-										</path>
-									</svg>
-
-									<span class="flag-label__text">
-										Приоритет 2
-									</span>
-
-									<hr class="hr-line">
-								</a>
-
-								<a class="flag-label__item">
-									<svg data-svgs-path="sm1/priority_3.svg" xmlns="http://www.w3.org/2000/svg"
-										width="24" height="24" viewBox="0 0 24 24">
-										<path fill="#246fe0" fill-rule="nonzero"
-											d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z">
-										</path>
-									</svg>
-
-									<span class="flag-label__text">
-										Приоритет 3
-									</span>
-
-									<hr class="hr-line">
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="flag-label">
-						<div class="flag-label__open-btn">
-							<div class="open-text-btn">
-								<svg width="24" height="24" class="open-text-btn__icon">
-									<path fill="none" stroke="currentColor" d="M16 10l-4 4-4-4">
-									</path>
-								</svg>
-							</div>
-						</div>
-
-						<div class="flag-label__content">
-							<h3>
-								<p class="flag-label__title">
-									Labels
-								</p>
-							</h3>
-
-							<div class="flag-label__wrapper" open>
-								<a class="flag-label__item">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<path fill-rule="nonzero"
-											d="M5.914 11.086l4.5-4.5A2 2 0 0 1 11.828 6H16a2 2 0 0 1 2 2v4.172a2 2 0 0 1-.586 1.414l-4.5 4.5a2 2 0 0 1-2.828 0l-4.172-4.172a2 2 0 0 1 0-2.828zM14 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
-										</path>
-									</svg>
-
-									<span class="flag-label__text">
-										label 2
-									</span>
-
-									<hr class="hr-line">
-								</a>
-
-								<a class="flag-label__item">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<path fill-rule="nonzero"
-											d="M5.914 11.086l4.5-4.5A2 2 0 0 1 11.828 6H16a2 2 0 0 1 2 2v4.172a2 2 0 0 1-.586 1.414l-4.5 4.5a2 2 0 0 1-2.828 0l-4.172-4.172a2 2 0 0 1 0-2.828zM14 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
-										</path>
-									</svg>
-
-									<span class="flag-label__text">
-										label 2
-									</span>
-
-									<hr class="hr-line">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="section _display-n" id="project">
-				<h2>
-					<p class="section__title">
-						Project-name
-					</p>
-				</h2>
-
-				<div class="section__content">
-					<a class="add-task" id="add-task-btn">
-						<div class="add-task__image-wrap">
-							<svg width="13" height="13">
-								<path class="add-task__icon"
-									d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
-									fill-rule="evenodd">
-								</path>
-							</svg>
-						</div>
-
-						<p class="add-task__text">
-							Добавить задачу
-						</p>
-					</a>
-
-					<div class="task-min">
-						<div class="task-min__content">
-							<div class="task-min__check-box">
-								<div class="check-box">
-									<svg width="24" height="24" class="check-box__mark">
-										<path
-											d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z">
-										</path>
-									</svg>
-								</div>
-							</div>
-
-							<div class="task-min__main-content">
-								<p class="task-min__name">
-									name
-								</p>
-
-								<p class="task-min__description">
-									description
-								</p>
-
-								<div class="task-min__tags">
-									<p class="date">
-										<svg width="12" height="12" viewBox="0 0 12 12">
-											<path fill="currentColor" fill-rule="nonzero"
-												d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z">
-											</path>
-										</svg>
-										date
-									</p>
-
-									<div class="task-min__labels">
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-
-										<p class="label">
-											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-												viewBox="0 0 12 12">
-												<path
-													d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
-													fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
-											label1
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line">
-					</div>
-				</div>
-			</section>
-		</div>
-	</main>
-
-	<div class="transparent-background">
-		<div class="pop-up">
-			<header class="pop-up__header">
-				<div class="pop-up__header-logo">
-					<svg class="pop-up__header-icon">
-						<use xlink:href="#inbox"></use>
-					</svg>
-					<div class="pop-up__header-title">Inbox</div>
-				</div>
-				<svg class="pop-up__close-button">
-					<use xlink:href="#close"></use>
-				</svg>
-			</header>
-
-			<div class="editor">
-				<div class="editor__container">
-					<div class="editor__input-container">
-						<div class="editor__marks-container">
-							<span class="editor__mark">
-								<svg class="editor__mark-small-icon">
-									<use xlink:href="#mark"></use>
-								</svg>
-								<span class="editor__mark-title">Mark</span>
-							</span>
-						</div>
-						<input class="editor__title" type="text" placeholder="Title">
-						<textarea class="editor__desc _main" placeholder="Description"></textarea>
-					</div>
-					<div class="editor__footer">
-						<div class="editor__footer-buttons">
-							<button class="editor__date-button">12.03.2022</button>
-						</div>
-						<div class="editor__footer-icons">
-							<svg class="editor__mark-icon _first">
-								<use xlink:href="#mark"></use>
-							</svg>
-							<svg class="editor__priority-icon">
-								<use xlink:href="#priority"></use>
-							</svg>
-							<svg class="editor__project-icon">
-								<use xlink:href="#project"></use>
-							</svg>
-						</div>
-					</div>
-					<div class="editor__menus-container">
-
-						<div class="prioritets-list none">
-							<div class="prioritets-list__item">
-								<svg class="prioritets-list__item-icon">
-									<use xlink:href="#priority1"></use>
-								</svg>
-								<h5 class="prioritets-list__item-title">Priority 1</h5>
-							</div>
-							<div class="prioritets-list__item">
-								<svg class="prioritets-list__item-icon">
-									<use xlink:href="#priority2"></use>
-								</svg>
-								<h5 class="prioritets-list__item-title">Priority 2</h5>
-							</div>
-							<div class="prioritets-list__item">
-								<svg class="prioritets-list__item-icon">
-									<use xlink:href="#priority3"></use>
-								</svg>
-								<h5 class="prioritets-list__item-title">Priority 3</h5>
-							</div>
-						</div>
-
-						<div class="projects-list none">
-							<div class="projects-list__item">
-								<svg class="projects-list__item-icon">
-									<use xlink:href="#project-circle"></use>
-								</svg>
-								<h5 class="projects-list__item-title">Project 1</h5>
-							</div>
-							<div class="projects-list__item">
-								<svg class="projects-list__item-icon">
-									<use xlink:href="#project-circle"></use>
-								</svg>
-								<h5 class="projects-list__item-title">Project 2</h5>
-							</div>
-							<div class="projects-list__item">
-								<svg class="projects-list__item-icon">
-									<use xlink:href="#project-circle"></use>
-								</svg>
-								<h5 class="projects-list__item-title">Project 3</h5>
-							</div>
-						</div>
-
-						<div class="marks-list none">
-							<div class="marks-list__input-container">
-								<input type="text" class="marks-list__input" placeholder="Type a label">
-							</div>
-							<ul class="marks-list__items">
-								<li class="marks-list__item">
-									<svg class="marks-list__item-icon">
-										<use xlink:href="#mark"></use>
-									</svg>
-									<span class="marks-list__item-title">Mark 1</span>
-									<svg class="marks-list__item-checkbox">
-										<use xlink:href="#mark-checkbox"></use>
-									</svg>
-								</li>
-								<li class="marks-list__item">
-									<svg class="marks-list__item-icon">
-										<use xlink:href="#mark"></use>
-									</svg>
-									<span class="marks-list__item-title">Mark 2</span>
-									<svg class="marks-list__item-checkbox">
-										<use xlink:href="#mark-checkbox-none"></use>
-									</svg>
-								</li>
-								<li class="marks-list__item">
-									<svg class="marks-list__item-icon">
-										<use xlink:href="#mark"></use>
-									</svg>
-									<span class="marks-list__item-title">Mark 3</span>
-									<svg class="marks-list__item-checkbox">
-										<use xlink:href="#mark-checkbox"></use>
-									</svg>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-				<div class="editor__buttons-container">
-					<button class="editor__save-button">Save</button>
-					<button class="editor__cancel-button">Cancel</button>
-				</div>
-			</div>
-
-			<div class="subtasks">
-				<header class="subtasks__header">
-					<h4 class="subtasks__title">Sub-tasks <span class="subtasks__quantity">1</span></h4>
-				</header>
-				<div class="subtasks__container">
-					<div class="subtasks__task">
-						<div class="subtasks__task-checkbox-container">
-							<svg class="subtasks__task-checkbox">
-								<use xlink:href="#check-box"></use>
-							</svg>
-						</div>
-						<div class="subtasks__task-info">
-							<div class="subtasks__task-title">Title</div>
-							<div class="subtasks__task-desc">Description</div>
-						</div>
-						<svg class="subtasks__edit-icon">
-							<use xlink:href="#edit"></use>
-						</svg>
-					</div>
-					<div class="editor">
-						<div class="editor__container">
-							<div class="editor__input-container">
-								<input class="editor__title" type="text" placeholder="Title">
-								<textarea class="editor__desc" placeholder="Description"></textarea>
-							</div>
-							<div class="editor__footer">
-								<div class="editor__footer-buttons">
-									<button class="editor__date-button">12.03.2022</button>
-								</div>
-								<div class="editor__footer-icons">
-									<svg class="editor__mark-icon _first">
-										<use xlink:href="#mark"></use>
-									</svg>
-									<svg class="editor__priority-icon">
-										<use xlink:href="#priority"></use>
-									</svg>
-									<svg class="editor__project-icon">
-										<use xlink:href="#project"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="editor__buttons-container">
-							<button class="editor__save-button">Save</button>
-							<button class="editor__cancel-button">Cancel</button>
-						</div>
-					</div>
-				</div>
-				<div class="subtasks__add-block">
-					<svg class="subtasks__add-icon">
-						<use xlink:href="#add"></use>
-					</svg>
-					<span class="subtasks__add-title">Add sub-task</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="./js/main.js">  </script>
-</body>
-
+        </header>
+        <main class="main-page">
+            <div class="main-page__categories">
+                <div class="main-page__item main-page__item_incoming">
+                    <div class="main-page__item-left">
+                        <img class="main-page__item-img" src="./img/incoming.png" />
+                        Incoming
+                    </div>
+
+                    <div>5</div>
+                    <!-- сверху кол-во входящих -->
+                </div>
+                <div class="main-page__item main-page__item_today">
+                    <div class="main-page__item-left">
+                        <img class="main-page__item-img" src="./img/calendar.png" alt="Upcoming_img" />
+                        Today
+                    </div>
+                </div>
+
+                <div class="main-page__item main-page__item_today">
+                    <div class="main-page__item-left">
+                        <img class="main-page__item-img" src="./img/upcoming.png" alt="Upcoming_img" />
+                        Upcoming
+                    </div>
+                </div>
+
+                <div class="main-page__item main-page__item_filters-and-labels">
+                    <div class="main-page__item-left">
+                        <img class="main-page__item-img" src="./img/filter.png" />
+                        Filters and labels
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="projects__title">
+                        <div class="projects__title-left">
+                            <svg class="arrow" width="16px" height="16px" viewBox="0 0 16 16">
+                                <g transform="translate(-266, -17)" fill="#777777">
+                                    <path
+                                        d="M280,22.7581818 L279.1564,22 L273.9922,26.506 L273.4414,26.0254545 L273.4444,26.0281818 L268.8562,22.0245455 L268,22.7712727 C269.2678,23.878 272.8084,26.9674545 273.9922,28 C274.8718,27.2330909 274.0144,27.9809091 280,22.7581818"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span class="projects__title-label"> Projects </span>
+                        </div>
+                        <div class="projects__title-rigth">
+                            <svg class="projects__plus" width="13" height="13">
+                                <path
+                                    d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input class="input__tag" placeholder="Write name of your project" />
+                    </div>
+
+                    <div class="projects__item">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="project_icon"
+                            style="color: rgb(184, 184, 184)"
+                        >
+                            <path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
+                        </svg>
+                        Welcome everyone!
+                    </div>
+                    <div class="projects__item">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="project_icon"
+                            style="color: rgb(184, 184, 184)"
+                        >
+                            <path d="M12 7a5 5 0 110 10 5 5 0 010-10z" fill="currentColor"></path>
+                        </svg>
+                        Study play guitar
+                    </div>
+                </div>
+            </div>
+            <div class="main-page__main-content">
+                <section class="section" id="main">
+                    <h2>
+                        <p class="section__title">Входящие</p>
+                    </h2>
+
+                    <div class="section__content">
+                        <a class="add-task" id="add-task-btn">
+                            <div class="add-task__image-wrap">
+                                <svg width="13" height="13">
+                                    <path
+                                        class="add-task__icon"
+                                        d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+                                        fill-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <p class="add-task__text">Добавить задачу</p>
+                        </a>
+
+                        <div class="task-min">
+                            <div class="task-min__content">
+                                <div class="task-min__check-box">
+                                    <div class="check-box">
+                                        <svg width="24" height="24" class="check-box__mark">
+                                            <path
+                                                d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="task-min__main-content">
+                                    <p class="task-min__name">name</p>
+
+                                    <p class="task-min__description">description</p>
+
+                                    <div class="task-min__tags">
+                                        <p class="date">
+                                            <svg width="12" height="12" viewBox="0 0 12 12">
+                                                <path
+                                                    fill="currentColor"
+                                                    fill-rule="nonzero"
+                                                    d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                                                ></path>
+                                            </svg>
+                                            date
+                                        </p>
+
+                                        <div class="task-min__labels">
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-line" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section _display-n" id="today">
+                    <h2>
+                        <p class="section__title">Сегодня</p>
+                    </h2>
+
+                    <div class="section__content">
+                        <a class="add-task" id="add-task-btn">
+                            <div class="add-task__image-wrap">
+                                <svg width="13" height="13">
+                                    <path
+                                        class="add-task__icon"
+                                        d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+                                        fill-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <p class="add-task__text">Добавить задачу</p>
+                        </a>
+
+                        <div class="task-min">
+                            <div class="task-min__content">
+                                <div class="task-min__check-box">
+                                    <div class="check-box">
+                                        <svg width="24" height="24" class="check-box__mark">
+                                            <path
+                                                d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="task-min__main-content">
+                                    <p class="task-min__name">name</p>
+
+                                    <p class="task-min__description">description</p>
+
+                                    <div class="task-min__tags">
+                                        <p class="date">
+                                            <svg width="12" height="12" viewBox="0 0 12 12">
+                                                <path
+                                                    fill="currentColor"
+                                                    fill-rule="nonzero"
+                                                    d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                                                ></path>
+                                            </svg>
+                                            date
+                                        </p>
+
+                                        <div class="task-min__labels">
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-line" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section _display-n" id="completed">
+                    <h2>
+                        <p class="section__title">completed</p>
+                    </h2>
+
+                    <div class="section__content">
+                        <div class="task-min">
+                            <div class="task-min__content _completed">
+                                <div class="task-min__check-box">
+                                    <div class="check-box _completed-check-box">
+                                        <svg width="24" height="24" class="check-box__mark _completed-check-box-mark">
+                                            <path
+                                                d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="task-min__main-content">
+                                    <p class="task-min__name _completed-text">name</p>
+
+                                    <p class="task-min__description _completed-text">description</p>
+
+                                    <div class="task-min__tags">
+                                        <p class="date">
+                                            <svg width="12" height="12" viewBox="0 0 12 12">
+                                                <path
+                                                    fill="currentColor"
+                                                    fill-rule="nonzero"
+                                                    d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                                                ></path>
+                                            </svg>
+                                            date
+                                        </p>
+
+                                        <div class="task-min__labels">
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-line" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="flag-label">
+                    <h2>
+                        <p class="section__title">Flags and labels</p>
+                    </h2>
+
+                    <div class="section__content">
+                        <div class="flag-label" id="flags">
+                            <div class="flag-label__open-btn">
+                                <div class="open-text-btn">
+                                    <svg width="24" height="24" class="open-text-btn__icon">
+                                        <path fill="none" stroke="currentColor" d="M16 10l-4 4-4-4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="flag-label__content">
+                                <h3>
+                                    <p class="flag-label__title">Flags</p>
+                                </h3>
+
+                                <div class="flag-label__wrapper" open>
+                                    <a class="flag-label__item">
+                                        <svg
+                                            data-svgs-path="sm1/priority_1.svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                fill="#d1453b"
+                                                fill-rule="nonzero"
+                                                d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z"
+                                            ></path>
+                                        </svg>
+
+                                        <span class="flag-label__text"> Приоритет 1 </span>
+
+                                        <hr class="hr-line" />
+                                    </a>
+
+                                    <a class="flag-label__item">
+                                        <svg
+                                            data-svgs-path="sm1/priority_2.svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                fill="#EB8909"
+                                                fill-rule="nonzero"
+                                                d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z"
+                                            ></path>
+                                        </svg>
+
+                                        <span class="flag-label__text"> Приоритет 2 </span>
+
+                                        <hr class="hr-line" />
+                                    </a>
+
+                                    <a class="flag-label__item">
+                                        <svg
+                                            data-svgs-path="sm1/priority_3.svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                fill="#246fe0"
+                                                fill-rule="nonzero"
+                                                d="M5 13.777V19.5a.5.5 0 1 1-1 0V5a.5.5 0 0 1 .223-.416C5.313 3.857 6.742 3.5 8.5 3.5c1.113 0 1.92.196 3.658.776C13.796 4.82 14.53 5 15.5 5c1.575 0 2.813-.31 3.723-.916A.5.5 0 0 1 20 4.5V13a.5.5 0 0 1-.223.416c-1.09.727-2.519 1.084-4.277 1.084-1.113 0-1.92-.196-3.658-.776C10.204 13.18 9.47 13 8.5 13c-1.45 0-2.614.262-3.5.777z"
+                                            ></path>
+                                        </svg>
+
+                                        <span class="flag-label__text"> Приоритет 3 </span>
+
+                                        <hr class="hr-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flag-label">
+                            <div class="flag-label__open-btn">
+                                <div class="open-text-btn">
+                                    <svg width="24" height="24" class="open-text-btn__icon">
+                                        <path fill="none" stroke="currentColor" d="M16 10l-4 4-4-4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="flag-label__content">
+                                <h3>
+                                    <p class="flag-label__title">Labels</p>
+                                </h3>
+
+                                <div class="flag-label__wrapper" open>
+                                    <a class="flag-label__item">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                fill-rule="nonzero"
+                                                d="M5.914 11.086l4.5-4.5A2 2 0 0 1 11.828 6H16a2 2 0 0 1 2 2v4.172a2 2 0 0 1-.586 1.414l-4.5 4.5a2 2 0 0 1-2.828 0l-4.172-4.172a2 2 0 0 1 0-2.828zM14 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                            ></path>
+                                        </svg>
+
+                                        <span class="flag-label__text"> label 2 </span>
+
+                                        <hr class="hr-line" />
+                                    </a>
+
+                                    <a class="flag-label__item">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                fill-rule="nonzero"
+                                                d="M5.914 11.086l4.5-4.5A2 2 0 0 1 11.828 6H16a2 2 0 0 1 2 2v4.172a2 2 0 0 1-.586 1.414l-4.5 4.5a2 2 0 0 1-2.828 0l-4.172-4.172a2 2 0 0 1 0-2.828zM14 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                                            ></path>
+                                        </svg>
+
+                                        <span class="flag-label__text"> label 2 </span>
+
+                                        <hr class="hr-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section _display-n" id="project">
+                    <h2>
+                        <p class="section__title">Project-name</p>
+                    </h2>
+
+                    <div class="section__content">
+                        <a class="add-task" id="add-task-btn">
+                            <div class="add-task__image-wrap">
+                                <svg width="13" height="13">
+                                    <path
+                                        class="add-task__icon"
+                                        d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+                                        fill-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <p class="add-task__text">Добавить задачу</p>
+                        </a>
+
+                        <div class="task-min">
+                            <div class="task-min__content">
+                                <div class="task-min__check-box">
+                                    <div class="check-box">
+                                        <svg width="24" height="24" class="check-box__mark">
+                                            <path
+                                                d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="task-min__main-content">
+                                    <p class="task-min__name">name</p>
+
+                                    <p class="task-min__description">description</p>
+
+                                    <div class="task-min__tags">
+                                        <p class="date">
+                                            <svg width="12" height="12" viewBox="0 0 12 12">
+                                                <path
+                                                    fill="currentColor"
+                                                    fill-rule="nonzero"
+                                                    d="M9.5 1A1.5 1.5 0 0 1 11 2.5v7A1.5 1.5 0 0 1 9.5 11h-7A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5zM8 7.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM8.5 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                                                ></path>
+                                            </svg>
+                                            date
+                                        </p>
+
+                                        <div class="task-min__labels">
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+
+                                            <p class="label">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 12 12"
+                                                >
+                                                    <path
+                                                        d="M9.357 1C10.264 1 11 1.736 11 2.643V6.07c0 .436-.173.854-.481 1.162L7.232 10.52a1.643 1.643 0 01-2.323 0L1.48 7.09c-.64-.64-.64-1.68.001-2.322L4.768 1.48C5.076 1.173 5.494 1 5.93 1h3.427zm-.07.91H5.93a.805.805 0 00-.569.235L2.145 5.362a.805.805 0 000 1.138L5.5 9.855a.805.805 0 001.138 0l3.217-3.217a.805.805 0 00.236-.569V2.713a.804.804 0 00-.804-.804zM7.364 3.726a.91.91 0 110 1.818.91.91 0 010-1.818z"
+                                                        fill="currentColor"
+                                                        fill-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                label1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-line" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="transparent-background">
+            <div class="pop-up">
+                <header class="pop-up__header">
+                    <div class="pop-up__header-logo">
+                        <svg class="pop-up__header-icon">
+                            <use xlink:href="#inbox"></use>
+                        </svg>
+                        <div class="pop-up__header-title">Inbox</div>
+                    </div>
+                    <svg class="pop-up__close-button">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </header>
+
+                <div class="editor">
+                    <div class="editor__container">
+                        <div class="editor__input-container">
+                            <div class="editor__marks-container">
+                                <span class="editor__mark">
+                                    <svg class="editor__mark-small-icon">
+                                        <use xlink:href="#mark"></use>
+                                    </svg>
+                                    <span class="editor__mark-title">Mark</span>
+                                </span>
+                            </div>
+                            <input class="editor__title" type="text" placeholder="Title" />
+                            <textarea class="editor__desc _main" placeholder="Description"></textarea>
+                        </div>
+                        <div class="editor__footer">
+                            <div class="editor__footer-buttons">
+                                <button class="editor__date-button">12.03.2022</button>
+                            </div>
+                            <div class="editor__footer-icons">
+                                <svg class="editor__mark-icon _first">
+                                    <use xlink:href="#mark"></use>
+                                </svg>
+                                <svg class="editor__priority-icon">
+                                    <use xlink:href="#priority"></use>
+                                </svg>
+                                <svg class="editor__project-icon">
+                                    <use xlink:href="#project"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="editor__menus-container">
+                            <div class="prioritets-list none">
+                                <div class="prioritets-list__item">
+                                    <svg class="prioritets-list__item-icon">
+                                        <use xlink:href="#priority1"></use>
+                                    </svg>
+                                    <h5 class="prioritets-list__item-title">Priority 1</h5>
+                                </div>
+                                <div class="prioritets-list__item">
+                                    <svg class="prioritets-list__item-icon">
+                                        <use xlink:href="#priority2"></use>
+                                    </svg>
+                                    <h5 class="prioritets-list__item-title">Priority 2</h5>
+                                </div>
+                                <div class="prioritets-list__item">
+                                    <svg class="prioritets-list__item-icon">
+                                        <use xlink:href="#priority3"></use>
+                                    </svg>
+                                    <h5 class="prioritets-list__item-title">Priority 3</h5>
+                                </div>
+                            </div>
+
+                            <div class="projects-list none">
+                                <div class="projects-list__item">
+                                    <svg class="projects-list__item-icon">
+                                        <use xlink:href="#project-circle"></use>
+                                    </svg>
+                                    <h5 class="projects-list__item-title">Project 1</h5>
+                                </div>
+                                <div class="projects-list__item">
+                                    <svg class="projects-list__item-icon">
+                                        <use xlink:href="#project-circle"></use>
+                                    </svg>
+                                    <h5 class="projects-list__item-title">Project 2</h5>
+                                </div>
+                                <div class="projects-list__item">
+                                    <svg class="projects-list__item-icon">
+                                        <use xlink:href="#project-circle"></use>
+                                    </svg>
+                                    <h5 class="projects-list__item-title">Project 3</h5>
+                                </div>
+                            </div>
+
+                            <div class="marks-list none">
+                                <div class="marks-list__input-container">
+                                    <input type="text" class="marks-list__input" placeholder="Type a label" />
+                                </div>
+                                <ul class="marks-list__items">
+                                    <li class="marks-list__item">
+                                        <svg class="marks-list__item-icon">
+                                            <use xlink:href="#mark"></use>
+                                        </svg>
+                                        <span class="marks-list__item-title">Mark 1</span>
+                                        <svg class="marks-list__item-checkbox">
+                                            <use xlink:href="#mark-checkbox"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="marks-list__item">
+                                        <svg class="marks-list__item-icon">
+                                            <use xlink:href="#mark"></use>
+                                        </svg>
+                                        <span class="marks-list__item-title">Mark 2</span>
+                                        <svg class="marks-list__item-checkbox">
+                                            <use xlink:href="#mark-checkbox-none"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="marks-list__item">
+                                        <svg class="marks-list__item-icon">
+                                            <use xlink:href="#mark"></use>
+                                        </svg>
+                                        <span class="marks-list__item-title">Mark 3</span>
+                                        <svg class="marks-list__item-checkbox">
+                                            <use xlink:href="#mark-checkbox"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor__buttons-container">
+                        <button class="editor__save-button">Save</button>
+                        <button class="editor__cancel-button">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="subtasks">
+                    <header class="subtasks__header">
+                        <h4 class="subtasks__title">Sub-tasks <span class="subtasks__quantity">1</span></h4>
+                    </header>
+                    <div class="subtasks__container">
+                        <div class="subtasks__task">
+                            <div class="subtasks__task-checkbox-container">
+                                <svg class="subtasks__task-checkbox">
+                                    <use xlink:href="#check-box"></use>
+                                </svg>
+                            </div>
+                            <div class="subtasks__task-info">
+                                <div class="subtasks__task-title">Title</div>
+                                <div class="subtasks__task-desc">Description</div>
+                            </div>
+                            <svg class="subtasks__edit-icon">
+                                <use xlink:href="#edit"></use>
+                            </svg>
+                        </div>
+                        <div class="editor">
+                            <div class="editor__container">
+                                <div class="editor__input-container">
+                                    <input class="editor__title" type="text" placeholder="Title" />
+                                    <textarea class="editor__desc" placeholder="Description"></textarea>
+                                </div>
+                                <div class="editor__footer">
+                                    <div class="editor__footer-buttons">
+                                        <button class="editor__date-button">12.03.2022</button>
+                                    </div>
+                                    <div class="editor__footer-icons">
+                                        <svg class="editor__mark-icon _first">
+                                            <use xlink:href="#mark"></use>
+                                        </svg>
+                                        <svg class="editor__priority-icon">
+                                            <use xlink:href="#priority"></use>
+                                        </svg>
+                                        <svg class="editor__project-icon">
+                                            <use xlink:href="#project"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="editor__buttons-container">
+                                <button class="editor__save-button">Save</button>
+                                <button class="editor__cancel-button">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subtasks__add-block">
+                        <svg class="subtasks__add-icon">
+                            <use xlink:href="#add"></use>
+                        </svg>
+                        <span class="subtasks__add-title">Add sub-task</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
 </html>
