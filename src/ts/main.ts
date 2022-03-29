@@ -47,7 +47,7 @@ inputElem.addEventListener('keyup', e => {
         }
         i++
 
-        let a = function (arg: string) {
+        const a = function (arg: string) {
             console.log(arg)
         }
 
@@ -80,11 +80,11 @@ if (mainBlock && arrow) {
             const items = document.querySelectorAll<HTMLElement>('.projects__item')
 
             if (arrow.classList.contains('arrow_rotate')) {
-                for (let item of items) {
+                for (const item of items) {
                     item.style.opacity = '0'
                 }
             } else {
-                for (let item of items) {
+                for (const item of items) {
                     item.style.opacity = '1'
                 }
             }

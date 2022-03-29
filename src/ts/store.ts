@@ -24,8 +24,8 @@ interface Task {
     compete: boolean
 }
 
-let tasks = new Map<number, Task>()
-let subtasks = new Map<number, Subtask>()
-let marks = new Map<number, Mark>()
+const tasks = new Map<number, Task>()
+const subtasks = new Map<number, Subtask>()
+const marks = new Map<number, Mark>()
 
 export { tasks, subtasks, marks }
