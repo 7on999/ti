@@ -23,7 +23,7 @@ import '../assets/icons/label-min.svg'
 import '../assets/icons/open-teg-mark.svg'
 import '../assets/icons/plus-project.svg'
 
-import { PopUp } from './pop-up'
+import PopUp from './pop-up'
 
 new PopUp()
 
@@ -40,18 +40,18 @@ inputElem.addEventListener('keyup', e => {
         if (localStorage.getItem('projectsArr')) {
             localStorage.setItem(
                 'projectsArr',
-                JSON.stringify([...JSON.parse(localStorage.getItem('projectsArr')), { id: i, text: inputElem.value }])
+                JSON.stringify([...JSON.parse(localStorage.getItem('projectsArr')), { id: i, text: inputElem.value }]),
             )
         } else {
             localStorage.setItem('projectsArr', JSON.stringify([{ id: i, text: inputElem.value }]))
         }
         i++
 
-        const a = function (arg: string) {
-            console.log(arg)
-        }
+        // const a = function (arg: string) {
+        //     console.log(arg)
+        // }
 
-        const arrDiv = JSON.parse(localStorage.getItem('projectsArr'))
+        // const arrDiv = JSON.parse(localStorage.getItem('projectsArr'))
         // arrDiv.forEach(item=>{
         //   const x = document.createElement('div')
         //   const el = document.createElement('div')

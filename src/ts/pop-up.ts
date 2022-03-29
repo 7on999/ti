@@ -1,7 +1,6 @@
-import { Editor } from './editor'
-import { Subtasks } from './subtasks'
+import Editor from './editor'
 
-export class PopUp {
+export default class PopUp {
     popUpContainer = document.querySelector('.transparent-background')
     closeButton = document.querySelector('.pop-up__close-button')
 
