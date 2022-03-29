@@ -47,6 +47,10 @@ inputElem.addEventListener('keyup', e => {
         }
         i++
 
+        let a = function (arg: string) {
+            console.log(arg)
+        }
+
         const arrDiv = JSON.parse(localStorage.getItem('projectsArr'))
         // arrDiv.forEach(item=>{
         //   const x = document.createElement('div')
