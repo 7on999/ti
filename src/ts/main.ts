@@ -23,9 +23,9 @@ import '../assets/icons/label-min.svg'
 import '../assets/icons/open-teg-mark.svg'
 import '../assets/icons/plus-project.svg'
 
-import PopUp from './pop-up'
+import { AddTaskButton } from './add-task-button'
 
-new PopUp()
+new AddTaskButton();
 
 const arrow = document.querySelector('.arrow')
 const mainBlock = document.querySelector('.projects__title')

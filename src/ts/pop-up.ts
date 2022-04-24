@@ -1,14 +1,34 @@
-import Editor from './editor'
+import Editor from './editor';
+import Subtasks from './subtasks';
+
+const popUpContainer = document.querySelector('.transparent-background');
+const closeButton = document.querySelector('.pop-up__close-button');
+
+const saveEditorButton = document.querySelector('.editor__save-button');
+const cancelEditorButton = document.querySelector('.editor__cancel-button');
+const titleInput: HTMLInputElement = document.querySelector('.editor__title');
+const descInput: HTMLInputElement = document.querySelector('.editor__desc');
 
 export default class PopUp {
-    popUpContainer = document.querySelector('.transparent-background')
-    closeButton = document.querySelector('.pop-up__close-button')
+    editor: Editor;
+    subtasks: Subtasks
 
     constructor() {
-        this.closeButton.addEventListener('click', () => {
-            this.popUpContainer.classList.add('none')
-        })
+        closeButton.addEventListener('click', this.close);
+        saveEditorButton.addEventListener('click', this.close);
+        cancelEditorButton.addEventListener('click', this.close);
 
-        new Editor()
+        this.editor = new Editor();
+        this.subtasks = new Subtasks();
+    }
+
+    open() {
+        popUpContainer.classList.remove('none');
+    }
+
+    close() {
+        popUpContainer.classList.add('none');
+        /*titleInput.value = '';
+        descInput.value = '';*/
     }
 }
